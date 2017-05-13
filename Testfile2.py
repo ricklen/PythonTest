@@ -1,13 +1,18 @@
-greeting = "Rick"
-_myname = "tim"
-Tim34 = "hello"
-Greeting = "there"
+a = 12
+b = 3
 
-print(Tim34 + ' ' + Greeting + greeting)
+print(a + b)
 
-age = 23
+print(a - b)
 
-print(age)
+print(a * b)
 
-print(greeting + str(age))
+print(a / b)
 
+print(a // b)
+print(a % b)
+
+for i in range(1, a//b):
+    print(i)
+
+print(a + b / 3 - 4 * 12)
