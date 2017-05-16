@@ -1,18 +1,35 @@
-a = 12
-b = 3
+parrot = "norwegian blue"
+print(parrot)
+print(parrot[3])
+print(parrot[-1])
+print(parrot[0:6])
+print(parrot[:6])
+print(parrot[6:])
+print(parrot[-4:-2])
+print(parrot[0:6:2])
+print(parrot[0:6:3])
 
-print(a + b)
+number = "9,223,372,036,854,775,807"
 
-print(a - b)
+print(number[1::4])
 
-print(a * b)
+numbers = "1, 2, 3, 4, 5, 6, 7, 8, 9"
 
-print(a / b)
+print(numbers[0::3])
 
-print(a // b)
-print(a % b)
+string1 = "he's "
+string2 = "probably "
 
-for i in range(1, a//b):
-    print(i)
+print(string1 + string2)
 
-print(a + b / 3 - 4 * 12)
+print(string1 * 3)
+
+today = "tuesday"
+
+print("day" in today)
+print("thur" in today)
+print("parrot" in "fjord")
+
+
+
+
