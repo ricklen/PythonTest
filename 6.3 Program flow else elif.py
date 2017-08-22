@@ -46,7 +46,7 @@
 
 ##----------------------------------------------
 ## Not statement in Python
-
+#
 # age = int(input("How old are you? "))
 #
 # if not(age < 18):
