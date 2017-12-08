@@ -27,25 +27,24 @@
 
 ipAddress = input("Enter an IP adress: ")
 counter = 0
-counterParts = 0
+counterParts = 1
+# char has to be initialized because if the for loop cannot start there will be en error in case nothing is entered.
+char = ""
 
 for char in ipAddress:
     if char == ".":
-        counterParts += 1
+
         print("length of segment {} is {}".format(counterParts, counter))
+        counterParts += 1
         counter = 0
-    elif char in "0123456789":
+    else:
         counter += 1
 
-
-print("Total number of segments is equal to {}".format(counterParts))
-print("the counter is {}".format(counter))
-
-
+# you can have an if statement after the loop ends in Python
+if char != '.':
+    print("length of segment {} is {}".format(counterParts,counter))
 
 
-
-print(ipAddress)
 
 
 
