@@ -25,45 +25,21 @@
 # you could use other techniques (such as splitting the string up), that's not the
 # approach we're looking for here.
 
-ipAddress = input("Enter an IP adress: ")
+ipAddress = input("Enter an IP "
+                  "address: ")
+
 counter = 0
-counterParts = 0
+counterParts = 1
+# char has to be initialized because if the for loop cannot start there will be en error in case nothing is entered.
+# char = ""
+
+if ipAddress[-1] != '.':
+    ipAddress += '.'
 
 for char in ipAddress:
-    if char == ".":
-        counterParts += 1
+    if char == '.':
         print("length of segment {} is {}".format(counterParts, counter))
+        counterParts += 1
         counter = 0
-    elif char in "0123456789":
+    else:
         counter += 1
-
-
-print("Total number of segments is equal to {}".format(counterParts))
-print("the counter is {}".format(counter))
-
-
-
-
-
-print(ipAddress)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
