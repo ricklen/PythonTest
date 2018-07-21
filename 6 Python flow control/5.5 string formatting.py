@@ -4,7 +4,7 @@ print("My age is " + str(age) + " years")
 print("My age is {0} years".format(age))
 
 
-print("There are {0} days in {1}, {1}, {3}, {4}, {5}, {6} and {7}".format(31, "january", "march",  "May"
+print("There are {0} days in {1}, {2}, {3}, {4}, {5}, {6} and {7}".format(31, "january", "march",  "May"
                                                                           , "May", "May", "May", "May"))
 
 print("""January: {2}
