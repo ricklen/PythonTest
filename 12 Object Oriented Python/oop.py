@@ -8,13 +8,17 @@ method: a function defined in a class
 attribute: a variable bound to an instance of a class
 
 """
+
+
 class Kettle(object):
+
+    power_source = "electricity"
 
     def __init__(self, make, price):
         self.make = make
         self.price = price
         self.on = False
-    
+
     def switch_on(self):
         self.on = True
 
@@ -30,7 +34,7 @@ hamilton = Kettle("Hamilton", 14.55)
 
 print("Models: {} = {}, {} = {}".format(kenwood.make, kenwood.price, hamilton.make, hamilton.price))
 
-print("Models: {0.make} = {0.price}, {1.make} = {1.price}".format(kenwood,hamilton))
+print("Models: {0.make} = {0.price}, {1.make} = {1.price}".format(kenwood, hamilton))
 
 print(kenwood.on)
 
@@ -46,3 +50,15 @@ print("*" * 80)
 # one can generate an attribute
 kenwood.power = 1.5
 print(kenwood.power)
+
+print("switch to atomic power")
+Kettle.power_source = "atomic power"
+print("Switch kenwood to gas")
+kenwood.power_source = "gas"
+print("Kettle global power source",Kettle.power_source)
+print("Hamilton power source",hamilton.power_source)
+print("kenwood power source",kenwood.power_source)
+
+print(Kettle.__dict__)
+print(kenwood.__dict__)
+
