@@ -21,6 +21,7 @@ class Player(object):
 
     def _set_level(self, level):
         if level > 0:
+
             change = level - self._level
             self._score += change * 1000
             self._level = level

@@ -1,16 +1,8 @@
-from player import Player
-from enemy import Enemy
+a = 3
+b = "tim"
+c = 1, 2, 3
 
-rick = Player("Rick")
+print(a)
+print(b)
+print(c)
 
-random_monster = Enemy("Basic enemy", 12, 1)
-print(random_monster)
-
-random_monster.take_damage(4)
-print(random_monster)
-
-random_monster.take_damage(4)
-print(random_monster)
-
-random_monster.take_damage(6)
-print(random_monster)
